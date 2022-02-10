@@ -7,6 +7,7 @@ public class Delivery : MonoBehaviour
     [SerializeField] Color32 hasPackageColor = new Color32(1, 1, 1, 1);
     [SerializeField] Color32 noPackageColor = new Color32(1, 1, 1, 1);
     [SerializeField] float destroyDelay = 0.5f; 
+   
     bool hasPackage; //domyœlnie jest false
 
     SpriteRenderer spriteRenderer; //odwo³anie do sprita samochodu by zmieniac mu kolor
@@ -19,7 +20,7 @@ public class Delivery : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Auu... Trafi³eœ na coœ!");
+        //Debug.Log("Auu... Trafi³eœ na coœ!");
     }
     void OnTriggerEnter2D(Collider2D other)
     {
